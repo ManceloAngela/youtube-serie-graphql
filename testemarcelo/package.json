@@ -1,0 +1,22 @@
+{
+  "name": "testemarcelo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e js,gql",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gql-generator-node": "^2.1.15",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "apollo-datasource-rest": "^0.9.3",
+    "apollo-server": "^2.16.0",
+    "graphql": "^15.3.0",
+    "graphql-tools": "^6.0.15"
+  }
+}
