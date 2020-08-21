@@ -1,14 +1,19 @@
 const { ApolloServer } = require("apollo-server");
 const graphql = require("./src/graphql");
-const XerpaService = require( "./src/services/Xerpa.service" );
-
-
+const CompanyRegisterService = require("./src/services/CompanyRegisterService");
 
 const server = new ApolloServer({
-  ...graphql,
-  dataSources: () =>( {
-    xerpaService: XerpaService
-  })
+	...graphql,
+	dataSources: () => ({
+		companyRegisterService: CompanyRegisterService,
+	}),
 });
 
 server.listen().then(({ url }) => console.log(url));
+
+// willSendRequest(request: RequestOptions) {
+// 	request.headers.set(
+// 		"Authorization",
+// 		"Bearer Z_RVYMf6jsUP4CsmVzR-qi-N5TGWmrI0jBDazT1b8ds=",
+// 	);
+// }

@@ -17,6 +17,8 @@
     "apollo-datasource-rest": "^0.9.3",
     "apollo-server": "^2.16.0",
     "graphql": "^15.3.0",
-    "graphql-tools": "^6.0.15"
+    "graphql-tools": "^6.0.15",
+    "knex": "^0.21.5",
+    "sqlite3": "^5.0.0"
   }
 }
